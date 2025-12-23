@@ -33,6 +33,7 @@ public class AggregatorTest {
         Aggregator agr = new Aggregator();
         double val = 11;
         agr.addValue(val);
+        agr.reset();
         assertThat(agr.getSum()).isZero();
     }
 }
